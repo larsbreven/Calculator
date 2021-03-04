@@ -16,13 +16,20 @@ namespace Calculator
                 Console.WriteLine("Enter a number from the menu below for the desired calculation");
                 Console.WriteLine("\n1: Addition\n2: Subtraction\n3: Multiplication\n4: Division\n");
                 char userInput = Console.ReadKey(true).KeyChar;
+
+                Console.WriteLine("");
+                Console.Write("Enter the first number to be calculated : ");
+                double FirstNum = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Enter the second number to be calculated: ");
+                double SecondNum = Convert.ToDouble(Console.ReadLine());
+
                 switch (userInput)
                     {
                     case '1':
-                    Addition();
+                        Brain.Addition(FirstNum,SecondNum);
                     break;
                     case '2':
-                    Subtraction();
+                        Brain.Subtraction(FirstNum,SecondNum);
                     break;
                     case '3':
                     Multiplication();
@@ -40,27 +47,9 @@ namespace Calculator
             while (Console.ReadKey(true).KeyChar == 'c');
         }
 
-        static void Addition()
-            {
-            Console.WriteLine("");
-            Console.Write("Enter the first number to be calculated : ");
-            double FirstNum = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter the second number to be calculated: ");
-            double SecondNum = Convert.ToDouble(Console.ReadLine());
-            double TheResult = FirstNum + SecondNum;
-            Console.WriteLine("The result of the calculation is:         " + TheResult);
-            }
 
-        static void Subtraction()
-            {
-            Console.WriteLine("");
-            Console.Write("Enter the first number to be calculated : ");
-            double FirstNum = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter the second number to be calculated: ");
-            double SecondNum = Convert.ToDouble(Console.ReadLine());
-            double TheResult = FirstNum - SecondNum;
-            Console.WriteLine("The result of the calculation is:         " + TheResult);
-            }
+
+
 
         static void Multiplication()
             {
