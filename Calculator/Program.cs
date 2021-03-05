@@ -32,10 +32,10 @@ namespace Calculator
                         Brain.Subtraction(FirstNum,SecondNum);
                     break;
                     case '3':
-                    Multiplication();
+                    Brain.Multiplication(FirstNum,SecondNum);
                     break;
                     case '4':
-                    Division();
+                    Brain.Division(FirstNum,SecondNum);
                     break;
 
                     default:

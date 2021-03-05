@@ -9,7 +9,6 @@ namespace Calculator
 
         public static double Addition(double FirstNum, double SecondNum)
         {
-
             double TheResult = FirstNum + SecondNum;
             Console.WriteLine("The result of the calculation is:         " + TheResult);
             return TheResult;
@@ -20,12 +19,48 @@ namespace Calculator
             return 1;
         }
 
+
+
+
+
         public static double Subtraction(double FirstNum, double SecondNum)
         {
-
             double TheResult = FirstNum - SecondNum;
             Console.WriteLine("The result of the calculation is:         " + TheResult);
             return TheResult;
         }
+
+
+
+
+        public static double Multiplication(double FirstNum, double SecondNum)
+        {
+            double TheResult = FirstNum * SecondNum;
+            Console.WriteLine("The result of the calculation is:         " + TheResult);
+            return TheResult;
+        }
+
+
+
+
+
+
+
+        public static double Division(double FirstNum, double SecondNum)
+        {
+            double TheResult = FirstNum / SecondNum;
+            Console.WriteLine("The result of the calculation is:         " + TheResult);
+            return TheResult;
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }
