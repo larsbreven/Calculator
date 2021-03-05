@@ -14,6 +14,7 @@ namespace Calculator
             return TheResult;
         }
 
+
         public static double Addition(double[] numArray)
         {
             return 1;

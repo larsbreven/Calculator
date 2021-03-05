@@ -23,6 +23,8 @@ namespace Calculator
                 Console.Write("Enter the second number to be calculated: ");
                 double SecondNum = Convert.ToDouble(Console.ReadLine());
 
+
+
                 switch (userInput)
                     {
                     case '1':
@@ -49,7 +51,7 @@ namespace Calculator
 
 
 
-
+/*
 
         static void Multiplication()
             {
@@ -81,6 +83,14 @@ namespace Calculator
                 Console.WriteLine("The result of the calculation is:         " + TheResult);
                 }
             } 
+
+
+        */
+
+
+
+
+
 
         static string AskUserFor(string what)
             {
