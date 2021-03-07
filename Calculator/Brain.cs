@@ -7,21 +7,16 @@ namespace Calculator
     public class Brain
     {
 
-        public static double Addition(double FirstNum, double SecondNum)
+       public static double Addition(double FirstNum, double SecondNum)
         {
             double TheResult = FirstNum + SecondNum;
             Console.WriteLine("The result of the calculation is:         " + TheResult);
             return TheResult;
         }
-
-
         public static double Addition(double[] numArray)
         {
-            return 1;
+        return 1;
         }
-
-
-
 
 
         public static double Subtraction(double FirstNum, double SecondNum)
@@ -32,8 +27,6 @@ namespace Calculator
         }
 
 
-
-
         public static double Multiplication(double FirstNum, double SecondNum)
         {
             double TheResult = FirstNum * SecondNum;
@@ -42,26 +35,11 @@ namespace Calculator
         }
 
 
-
-
-
-
-
         public static double Division(double FirstNum, double SecondNum)
         {
             double TheResult = FirstNum / SecondNum;
             Console.WriteLine("The result of the calculation is:         " + TheResult);
             return TheResult;
         }
-
-
-
-
-
-
-
-
-
-
     }
 }

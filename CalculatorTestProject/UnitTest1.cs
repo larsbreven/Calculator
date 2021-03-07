@@ -7,7 +7,7 @@ namespace Calculator.Tests
     public class UnitTest1
     {
         
-        [Fact]  // Annotation, "Fact" is where Xunit is looking for when it's looking for the test methods to test
+        [Fact]  // "Fact" is where Xunit is looking for the test methods to test
         public void AdditionTestPos()  // Run to check the addition method when positive decimal numbers are used
         {
             double result = Brain.Addition(1.545,1.455);                // Arrange
@@ -96,12 +96,5 @@ namespace Calculator.Tests
             double result = Brain.Division(0, 658.32);
             Assert.Equal(0, result);
         }
-
-
-
-
-
-
-
     }
 }

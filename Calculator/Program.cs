@@ -22,22 +22,33 @@ namespace Calculator
                 Console.Write("Enter the second number to be calculated: ");
                 double SecondNum = Convert.ToDouble(Console.ReadLine());
 
-
-
+                double[] numArray = new double[2];  // ***************** Overload method********************
+                numArray[0] = FirstNum;
+                numArray[1] = SecondNum;
 
                 switch (userInput)
-                    {
+                {
                     case '1':
-                        Brain.Addition(FirstNum,SecondNum);
+                        Brain.Addition(numArray[0], numArray[1]);
                     break;
+
                     case '2':
-                        Brain.Subtraction(FirstNum,SecondNum);
+                        Brain.Subtraction(numArray[0],numArray[1]);
                     break;
+
                     case '3':
-                    Brain.Multiplication(FirstNum,SecondNum);
+                        Brain.Multiplication(FirstNum,SecondNum);
                     break;
+
                     case '4':
-                    Brain.Division(FirstNum,SecondNum);
+                        if (SecondNum == 0)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine("You have entered: " + SecondNum);
+                            Console.WriteLine("Please note the entered value is not valid");
+                            return;
+                        }
+                        Brain.Division(FirstNum,SecondNum);
                     break;
 
                     default:
@@ -47,61 +58,6 @@ namespace Calculator
                 Console.WriteLine("Press c to continue, any other key to exit the calculator ");
                 }
             while (Console.ReadKey(true).KeyChar == 'c');
+            }
         }
-
-
-
-/*
-
-        static void Multiplication()
-            {
-            Console.WriteLine("");
-            Console.Write("Enter the first number to be calculated : ");
-            double FirstNum = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter the second number to be calculated: ");
-            double SecondNum = Convert.ToDouble(Console.ReadLine());
-            double TheResult = FirstNum * SecondNum;
-            Console.WriteLine("The result of the calculation is:         " + TheResult);
-            }
-
-        static void Division()
-            {
-            Console.WriteLine("");
-            Console.Write("Enter the first number to be calculated:  ");
-            double FirstNum = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter the second number to be calculated: ");
-            double SecondNum = Convert.ToDouble(Console.ReadLine());
-            if (SecondNum == 0)
-                {
-                Console.WriteLine("");
-                Console.WriteLine("You have entered: " + SecondNum);
-                Console.WriteLine("Please note the entered value is not valid");
-                }
-            else
-                {
-                double TheResult = FirstNum / SecondNum;
-                Console.WriteLine("The result of the calculation is:         " + TheResult);
-                }
-            } 
-
-
-        */
-
-
-
-
-
-
-        static string AskUserFor(string what)
-            {
-            Console.Write($"Please type in {what}: ");
-            return Console.ReadLine();
-            }
-
-        static int AskUserFor(string what, bool isNumber)
-            {
-            return Convert.ToInt32(AskUserFor(what));
-            }
-
-        } 
 }
