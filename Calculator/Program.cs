@@ -16,12 +16,12 @@ namespace Calculator
                 Console.WriteLine("Enter a number from the menu below for the desired calculation");
                 Console.WriteLine("\n1: Addition\n2: Subtraction\n3: Multiplication\n4: Division\n");
                 char userInput = Console.ReadKey(true).KeyChar;
-
                 Console.WriteLine("");
                 Console.Write("Enter the first number to be calculated : ");
                 double FirstNum = Convert.ToDouble(Console.ReadLine());
                 Console.Write("Enter the second number to be calculated: ");
                 double SecondNum = Convert.ToDouble(Console.ReadLine());
+
 
 
 
