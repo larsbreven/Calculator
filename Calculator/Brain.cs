@@ -13,9 +13,15 @@ namespace Calculator
             Console.WriteLine("The result of the calculation is:         " + TheResult);
             return TheResult;
         }
-        public static double Addition(double[] numArray)
-        {
-        return 1;
+
+        public static double Addition(double[] numbers)     // Overloaded method of Addition that takes a double array as input parameter
+        {                   
+            double sum = 0;
+            foreach (double num in numbers)
+            {
+                sum = num + sum;
+            }
+            return sum;
         }
 
 
@@ -26,8 +32,18 @@ namespace Calculator
             return TheResult;
         }
 
+        public static double Subtraction(double[] numbers)  // Overloaded method of Subtraction that takes a double array as input parameter
+        {
+            double sum = 0;
+            foreach (double num in numbers)
+            {
+                sum = num - sum;
+            }
+            return sum;
+        }
 
-        public static double Multiplication(double FirstNum, double SecondNum)
+
+            public static double Multiplication(double FirstNum, double SecondNum)
         {
             double TheResult = FirstNum * SecondNum;
             Console.WriteLine("The result of the calculation is:         " + TheResult);
